@@ -12,6 +12,9 @@ RUN apt update \
 
 WORKDIR /app/LiveSplitOne
 
+COPY ./webpack.config.patch ./
+RUN patch -u < webpack.config.patch
+
 CMD ["npm", "run", "serve"]
 
 EXPOSE 8080
