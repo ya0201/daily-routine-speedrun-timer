@@ -12,6 +12,6 @@ RUN apt update \
 
 WORKDIR /app/LiveSplitOne
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "serve"]
 
 EXPOSE 8080
