@@ -9,3 +9,7 @@ RUN apt update \
     && cargo install wasm-bindgen-cli \
     && npm install \
     && npm run build:core
+
+WORKDIR /app/LiveSplitOne
+
+CMD ["npm", "run", "start"]
